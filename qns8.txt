@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+    double a, b, c;
+    double root1, root2, imaginary;
+    cout << "Enter the coefficients of the quadratic equation (ax^2 + bx + c = 0): " << endl;
+     cout<<"enter a ="<<endl;
+     cin>>a;
+     cout<<"enter b ="<<endl;
+     cin>>b;
+     cout<<"enter c ="<<endl;
+     cin>>c;
+
+    double discriminant = b * b - 4 * a * c;
+
+    //real and different roots
+    if (discriminant > 0) {
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        cout << "Roots are real and different." << endl;
+        cout << "Root 1 = " << root1 << endl;
+        cout << "Root 2 = " << root2 << endl;
+    }
+    //real and same roots
+    else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
+        cout << "Roots are real and same." << endl;
+        cout << "Root 1 = Root 2 = " << root1 << endl;
+    } 
+    //complex roots
+    else {
+        imaginary = sqrt(-discriminant) / (2 * a);
+        root1 = -b / (2 * a);
+        root2 = -b / (2 * a);
+        cout << "Roots are complex and different." << endl;
+        cout << "Root 1 = " << root1 << " + " << imaginary << "i" << endl;
+        cout << "Root 2 = " << root2 << " - " << imaginary << "i" << endl;
+    }
+    return 0;
+}

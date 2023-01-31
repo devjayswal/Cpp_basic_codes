@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+	int a,b;
+	cout<<"enter first number"<<endl;
+	cin<<a;
+	cout<<"enter second number"<<endl;
+	cin>>b;
+	cout<<"the sum of these two number"<<a+b<<endl;p
+	return 0;}

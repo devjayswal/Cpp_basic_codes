@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+bool isPrime(int n) {
+    if (n <= 1) {
+        return false;
+    }
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+	cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+    int num;
+    cout<<"enter a number which you want to cheak prime or not\n enter number :- ";
+    cin>>num;
+
+    if (isPrime(num)) {
+        cout << num << " is a prime number" << endl;
+    } else {
+        cout << num << " is not a prime number" << endl;
+    }
+
+    return 0;
+}

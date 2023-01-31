@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+    int year;
+    cout<<"enter year which you want to cheak \n enter year:-";
+    cin>>year;
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                cout << year << " is a leap year." << endl;
+            } else {
+                cout << year << " is not a leap year." << endl;
+            }
+        } else {
+            cout << year << " is a leap year." << endl;
+        }
+    } else {
+        cout << year << " is not a leap year." << endl;
+    }
+
+    return 0;
+}

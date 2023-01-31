@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+
+int main () {
+		cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+		
+		int h,r;
+		cout<<"plese enter hight "<<endl;
+		cin<<h;
+		cout<<"plese enter radius "<<endl;
+		cin>>r;
+		cout<<"the volume of cylinder"<<3.14 * r * r * h<<endl;
+		
+   return 0;}

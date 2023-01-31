@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+struct Complex {
+    double real;
+    double imag;
+};
+
+Complex add(Complex a, Complex b) {
+    Complex result;
+    result.real = a.real + b.real;
+    result.imag = a.imag + b.imag;
+    return result;
+}
+
+int main() {
+    cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+    Complex c1, c2, c3;
+    cout<<"enter real part of first  complex number ";
+    cin >> c1.real;
+    cout<<"enter imaginary part of first  complex number ";
+    cin >> c1.imag;
+    cout<<"enter real part of second  complex number ";
+    cin >> c2.real;
+    cout<<"enter imaginary part of second  complex number ";
+    cin>> c2.imag;
+    c3 = add(c1, c2);
+    cout<<"the sum of these two complex number is "<<endl;
+    cout << c3.real << " + " << c3.imag << "i" << endl;
+    return 0;
+}

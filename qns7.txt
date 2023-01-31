@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+    int a = 5, b = 10, c = 15;
+    int largest = a > b ? (a > c ? a : c) : (b > c ? b : c);
+    cout << "Largest number is: " << largest <<endl;
+    return 0;
+}

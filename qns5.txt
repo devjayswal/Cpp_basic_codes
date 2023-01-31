@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+void swapWithThirdVariable(int &x, int &y) {
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+void swapWithoutThirdVariable(int &x, int &y) {
+    x = x + y;
+    y = x - y;
+    x = x - y;
+}
+
+int main() {
+      cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+
+    int x = 5, y = 10;
+    cout << "Original values: x = " << x << ", y = " << y << std::endl;
+
+    
+    swapWithThirdVariable(x, y);
+    cout << "Values after swapping (with third variable): x = " << x << ", y = " << y << std::endl;
+
+    
+    swapWithoutThirdVariable(x, y);
+    cout << "Values after swapping (without third variable): x = " << x << ", y = " << y << std::endl;
+
+    return 0;
+}

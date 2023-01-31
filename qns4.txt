@@ -1,0 +1,21 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+
+int main () {
+		cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+		
+	  int u,a,t,b,c;
+	  cout<<"enter u "<<endl; cin>>u;
+	  cout<<"enter a "<<endl;cin>>a;
+	  cout<<"enter t "<<endl;cin>>t;
+	  cout<<"enter b "<<endl;cin>>b;
+	  cout<<"enter c "<<endl;cin>>c;
+	  cout<<"V="<<u+a*t<<endl;
+	  cout<<"S="<<u*t+1/2*a<<endl;
+	  cout<<"T="<<2*a+sqrt(b)+9*c<<endl;
+	  
+	  
+		
+   return 0;}

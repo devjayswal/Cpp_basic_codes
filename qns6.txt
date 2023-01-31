@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+cout<<"name:-dev jayswal"<<endl<<"enroll no. 0901AM221031"<<endl;
+    int x = 5;
+    cout << "Original value of x: " << x << endl;
+
+    // Unary prefix increment 
+    cout << "Value of x after prefix increment: " << ++x << endl;
+
+    // Unary postfix increment 
+    cout << "Value of x after postfix increment: " << x++ << endl;
+    cout << "New value of x after postfix increment: " << x << endl;
+
+    // Unary prefix decrement 
+    cout << "Value of x after prefix decrement: " << --x << endl;
+
+    // Unary postfix decrement 
+    cout << "Value of x after postfix decrement: " << x-- <<endl;
+    cout << "New value of x after postfix decrement: " << x <<endl;
+
+    return 0;
+}
