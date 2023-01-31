@@ -2,8 +2,8 @@
 #include <string>
 using namespace std;
 int main() {
-    cout<<"Name: Dhruv Kushwah\n";
-    cout<<"Enrollment No: 0901AM221034\n";
+    cout<<"Name: Dev jayswal\n";
+    cout<<"Enrollment No: 0901AM221031\n";
     string name;
     int rollno;
     int userinput;
